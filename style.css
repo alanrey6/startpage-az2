@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: rgb(40, 40, 40);
+  --secondary-color: rgb(233, 219, 178);
+  --color1: rgb(104, 158, 106);
+  --color2: rgb(74, 133, 136);
+  --color3: rgb(221, 154, 32);
+  --color4: rgb(200, 36, 29);
+}
+
+.container1 {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav {
+  background-color: var(--secondary-color);
+  width: 80%;
+  height: 80%;
+  border: 13px solid var(--secondary-color);
+  border-radius: 10px;
+}
+#content {
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 6px;
+}
+
+.container2 {
+  background: var(--primary-color);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#one-2 {
+  height: 50px;
+  width: 100%;
+  background-color: var(--color1);
+}
+#two-2 {
+  height: 50px;
+  width: 100%;
+  background-color: var(--color2);
+}
+#three-2 {
+  height: 50px;
+  width: 100%;
+  background-color: var(--color3);
+}
+#four-2 {
+  height: 50px;
+  width: 100%;
+  background-color: var(--color4);
+}
