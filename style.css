@@ -2,28 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* Scrollbar - Works on Firefox */
-  scrollbar-width: thin;
-  scrollbar-color: var(--secondary-color) var(--primary-color);
 }
 
 html {
   font-size: 20px;
 }
 
-/* Scrollbar - Works on Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-  width: 0.25rem;
-}
-
-*::-webkit-scrollbar-track {
-  background: var(--primary-color);
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: var(--color3);
-  border-radius: 0.75rem;
-}
+/* Light and Dark theme */
 
 .theme-light {
   --primary-color: rgb(233, 219, 178);
@@ -45,7 +30,7 @@ html {
 
 /* Container holding the navigation pane and all icons */
 
-.container1 {
+.container-1 {
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -75,6 +60,7 @@ html {
   grid-template-columns: repeat(4, auto);
   grid-gap: 0.5rem;
   overflow: auto;
+  transition: background-color 0.2s;
 }
 
 .content div {
@@ -92,6 +78,8 @@ html {
   transform: scale(1.15);
 }
 
+/* Dark/Light Button */
+
 #dark {
   margin-top: 1rem;
   color: var(--secondary-color);
@@ -103,7 +91,7 @@ html {
 
 /* Container holding the background */
 
-.container2 {
+.container-2 {
   background: var(--primary-color);
   width: 100vw;
   height: 100vh;
@@ -111,24 +99,25 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: background-color 0.2s;
 }
 
-#one {
+#bar-one {
   height: 50px;
   width: 100%;
   background-color: var(--color1);
 }
-#two {
+#bar-two {
   height: 50px;
   width: 100%;
   background-color: var(--color2);
 }
-#three {
+#bar-three {
   height: 50px;
   width: 100%;
   background-color: var(--color3);
 }
-#four {
+#bar-four {
   height: 50px;
   width: 100%;
   background-color: var(--color4);
